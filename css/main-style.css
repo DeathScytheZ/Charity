@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "poppins";
+    src: url("../Fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face{
+    font-family: "dancing script";
+    src: url("../Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: rgb(13, 13, 13);
+    width: 100%;
+    height: 100%;
+
+}
+
+
+body h1, h2{
+    user-select: none;
+}
+
+
+::selection{
+    background-color: rgb(151, 10, 10);
+}
+
+
+a:link,
+a:visited {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.top-header{
+    padding: 1.5em;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+
+#logo{
+    width: 12%;
+    height: 75%;
+    padding-left: 20px;
+}
+
+.hero-section{   
+    width: 100%;
+    min-height: 60%;
+    margin-bottom:2px;
+    background-image: url("../images/AP23284637421848-1-1697090360.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(247, 247, 247, 0.678);
+}
+
+.hero-section h1{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.hero-section p{
+    padding-bottom: 2em;
+}
+
+
+.hero-section button{
+    width: 200px; 
+    height: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.79);
+    font-family: "dancing script";
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.742);
+}
+
+.hero-section button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 5px white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.263);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.whats-happening{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-bottom: 2px;
+}
+
+
+.situation-severity{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-bottom: 2px;
+}
+
+
+.whats-happening{
+    padding: 3em 1.4em;
+}
+
+.situation-severity{
+    padding-top: 1.3em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.whats-happening img,
+.situation-severity img{
+    width: 50vh;
+    margin-top: 1.8em;
+    
+}
+
+
+.whats-happening img{
+    float: right;
+    margin-left: 1em;
+}
+
+
+.situation-severity img{
+    float: left;
+    margin-right: 1em;
+}
+
+.whats-happening h2,
+.situation-severity h2{
+    padding-bottom: 1.1em;
+}
+
+
+.victims-container{
+    background-color: rgb(97, 0, 0);
+    padding: 2em 1.4em;
+    margin-bottom: 2px;
+}
+
+.stats{
+    display: flex;
+}
+
+
+#test{
+    text-align: center;
+    padding-bottom: 1.2em;
+}
+
+.victims{
+    text-align: center;
+    margin-right: 2em;
+}
+
+.victims:last-child{
+    margin-right: 0;
+}
+
+.victims-container img{
+    width: 15vh;
+}
+
+.victims-container p{
+    margin: 5px 0 0;
+}
+
+.victims h2{
+    padding: 10px 0;
+}
+
+.how-to-help,
+.what-to-boycott{
+    height: 50%;
+    background-color: black;
+    margin-bottom: 2px;
+}
+
+
+.how-to-help img{
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin-right: 1em;
+}
+
+
+
+.how-to-help h2,
+.how-to-help p,
+.what-to-boycott h2,
+.what-to-boycott p{
+    padding: 1em;
+    color: white;
+}
+
+
+.what-to-boycott img{
+    float: right;
+    width: 45%;
+    height: 100%;
+    margin-left: 1em;
+}
+
+
+.alternative-help{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2px;
+}
+
+.alt-help{
+    display: flex;
+}
+
+.alternative-help p{
+    padding: 1.5em;
+}
+
+
+.item h2{
+    padding-top: 1em;
+}
+
+
+.call-to-action{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-image: url("../images/fffse.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.call-to-action h2{
+    font-family: "dancing script";
+    font-size: 40px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.call-to-action button{
+    margin-top: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 20px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;   
+    font-size: 30px;
+    font-weight: bold;
+    background: transparent;
+    background-color: rgba(160, 159, 159, 0.142);
+    color: rgba(255, 255, 255, 0.618);
+}
+
+.call-to-action button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 5px white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.263);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.footer-section{
+    color: white;       
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+.footer-section h2{
+    padding-bottom: 1em;
+    font-family: poppins;
+}
+
+
+
+.site-info li{
+    padding-bottom: 5px;
+    text-decoration: none;
+    list-style-type: none ;
+}
+
+
+
+.site-info li:hover{
+    text-decoration: underline;
+}

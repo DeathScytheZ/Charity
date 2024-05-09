@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <link rel="stylesheet" href="css/login-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+
+
+    <header class="top-header">
+        <img id="logo" src="icons/save-gaza-high-resolution-logo-transparent(4).png">
+    </header>
+    <div class="overlay"></div>
+
+    <section id="login-form">
+        <h1> Login </h1>
+        <form class="login">
+            <div class="input-box">
+                <input type="text" placeholder="username" id="usernameInput">
+                <i class='bx bxs-user' solid ></i>
+            </div>
+
+            <div class="input-box">
+                <input id="passwordInput" type="password" placeholder="password">
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <button type="button" class="btn" id="login-btn"> Login </button>
+
+            <div class="signup-link">
+                <p> Don't have an account? <a href="#" id="toggleSignup"> Sign up </a> </p>   
+            </div>
+        </form>
+    </section>
+
+
+    <section id="signup-form" class="hidden">
+        <h1> Sign up </h1>
+        <form class="signup">
+            <div class="input-box">
+                <input type="text" placeholder="username">
+                <i class='bx bxs-user' solid ></i>  
+            </div>
+
+            <div class="input-box">
+                <input id="pswrd" type="password" placeholder="password">
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="input-box">
+                <input id="pswrd-conf" type="password" placeholder="confirmPassword">
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="input-box">
+                <input id="email" type="email" placeholder="example@google.com">
+                <i class='bx bx-envelope' ></i>
+            </div>
+
+            <button type="button" class="btn"> Sign up </button>
+
+            <div class="signup-link">
+                <p> Already have an account? <a href="#" id="toggleLogin"> Login </a> </p>   
+            </div>
+        </form>
+    </section>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
