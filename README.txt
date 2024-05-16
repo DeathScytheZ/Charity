@@ -1,2 +1,2 @@
-username: gaza
-password: 1234
+username: admin
+password: adminGaza
