@@ -16,22 +16,21 @@
 }
 
 body, html{
-    background-color: rgb(13, 13, 13);
+    background-color: rgba(0, 0, 0, 0.738);
     width: 100%;
-    height: 100%;
-
+    max-height: 100%;
 }
 
 
-body h1, h2{
+body h1{
     user-select: none;
 }
 
 
 ::selection{
-    background-color: rgb(151, 10, 10);
+    color: rgb(255, 255, 255);
+    background: rgb(57, 1, 1);
 }
-
 
 a:link,
 a:visited {
@@ -53,6 +52,8 @@ a:visited {
     height: 75%;
     padding-left: 20px;
 }
+
+
 
 .hero-section{   
     width: 100%;
@@ -100,49 +101,9 @@ a:visited {
 }
 
 
-.whats-happening{
-    background-color: rgb(0, 0, 0);
-    color:white;
-    margin-bottom: 2px;
-}
-
-
-.situation-severity{
-    background-color: rgb(0, 0, 0);
-    color:white;
-    margin-bottom: 2px;
-}
-
-
-.whats-happening{
-    padding: 3em 1.4em;
-}
-
-.situation-severity{
-    padding-top: 1.3em;
-    padding-bottom: 3em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-
 .whats-happening img,
 .situation-severity img{
-    width: 50vh;
-    margin-top: 1.8em;
-    
-}
-
-
-.whats-happening img{
-    float: right;
-    margin-left: 1em;
-}
-
-
-.situation-severity img{
-    float: left;
-    margin-right: 1em;
+    width: 100%;
 }
 
 .whats-happening h2,
@@ -151,10 +112,53 @@ a:visited {
 }
 
 
+.whats-happening{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-bottom: 2px;
+    display: flex;
+    padding: 2em 1.4em;
+    width: 100%;
+}
+
+.what-is-happening-img{
+    margin-top: 2.5em;
+    margin-left: 1em;
+    flex:1;
+}
+
+.what-is-happening-text{
+    flex:2;
+}
+
+.situation-severity{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-bottom: 2px;
+    display: flex;
+    padding: 2em 1.4em;
+    width:100%;
+}
+
+.situation-severity-img{
+    margin-top: 2.5em;
+    padding-right: 1em;
+    flex:1;
+}
+
+.situation-severity-text{
+    flex:2;
+}
+
 .victims-container{
     background-color: rgb(97, 0, 0);
     padding: 2em 1.4em;
     margin-bottom: 2px;
+}
+
+.victims-container ::selection{
+    color: rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
 }
 
 .stats{
@@ -190,19 +194,25 @@ a:visited {
 
 .how-to-help,
 .what-to-boycott{
-    height: 50%;
     background-color: black;
     margin-bottom: 2px;
 }
 
-
-.how-to-help img{
-    float: left;
-    width: 40%;
-    height: 100%;
-    margin-right: 1em;
+.how-to-help{
+    display: flex;
 }
 
+
+.how-to-help-text,
+.how-to-help-img{
+    flex:1;
+    margin-left: 4px;
+}
+
+
+.how-to-help-img img{
+  width: 100%;
+}
 
 
 .how-to-help h2,
@@ -213,12 +223,23 @@ a:visited {
     color: white;
 }
 
+.what-to-boycott{
+    display: flex;
+}
+
+.what-to-boycott-img{
+    flex:1;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.what-to-boycott-text{
+    flex:1;
+}
+
 
 .what-to-boycott img{
-    float: right;
-    width: 45%;
-    height: 100%;
-    margin-left: 1em;
+    width: 100%;
 }
 
 
