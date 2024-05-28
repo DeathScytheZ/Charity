@@ -332,3 +332,8 @@ a:visited {
 .site-info li:hover{
     text-decoration: underline;
 }
+
+
+.socials{
+    margin-top: 5px;
+}
