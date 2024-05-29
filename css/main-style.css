@@ -151,7 +151,7 @@ a:visited {
 }
 
 .victims-container{
-    background-color: rgb(97, 0, 0);
+    background-color: #630505ca;
     padding: 2em 1.4em;
     margin-bottom: 2px;
 }
@@ -336,4 +336,20 @@ a:visited {
 
 .socials{
     margin-top: 5px;
+}
+
+
+
+
+
+/* styling the donation page */
+
+
+.donate{
+    background-image: url(../images/2023-11-09T090350Z_551626354_RC2K94A5F12D_RTRMADP_3_ISRAEL-PALESTINIANS-1703451546.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+
 }
