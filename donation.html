@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Donation </title>
     <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="top-header">
@@ -18,14 +19,62 @@
 
 
 
+    <section class="donation">
 
-    <section class="donate">
-        
-        <form action="" class="donation-info">
-            <label></label>
-            <input>
-        </form>
+        <div class="donation-text">
+            <h1> Donate now </h1>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos provident aliquid repellendus alias neque.
+                Sit possimus, voluptate facilis, nesciunt voluptatum doloremque quisquam perferendis repudiandae, atque tempore asperiores. Perferendis, tempore illo?</p>
+        </div>
+
+
+        <div class="donation-info">
+            <form class="donation-form">
+
+
+            
+
+                <section class="user-info">
+                    
+                    <h2> <i class='bx bxs-id-card'></i> Enter you personal information </h2>
+                    <div>
+                        <input type="text" id="first-name" placeholder="First name">
+                        <input type="text" id="last-name" placeholder="Last  name">
+                    </div>
+                    
+                    
+                    
+                    <div>
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="tel" id="phone-number" placeholder="Telephone">
+                    </div>
+
+                </section>
+  
+
+                <section class="card-info">
+                    <h2> <i class='bx bx-credit-card' ></i> Enter your credit card information </h2>
+                    <div>
+                        <input type="text" id="card-number" placeholder="Card number" maxlength="16" pattern="[0-9]{16}">
+                    </div>
+
+                    <div>
+                        <input type="text" id="expiration-date" placeholder="MM/YY" maxlength="5" pattern="0[0-9]|1[0-9]\/[0-9]{2}">
+                        <input type="text" id="security-code" placeholder="Security code" maxlength="4" pattern="[0-9]{3}|[0-9]{4}">
+                    </div>
+
+                    
+                </section>
+                <div>
+                    <input type="submit" id="submit-btn">
+                    
+                </div>
+            </form>
+        </div>
+
     </section>
+
+
 
 
 

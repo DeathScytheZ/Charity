@@ -345,11 +345,79 @@ a:visited {
 /* styling the donation page */
 
 
-.donate{
-    background-image: url(../images/2023-11-09T090350Z_551626354_RC2K94A5F12D_RTRMADP_3_ISRAEL-PALESTINIANS-1703451546.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 700px;
+.donation {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+
+
+.donation-text {
+    width: 50%;
+}
+
+.donation-info {
+    width: 30%;
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.donation-form div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.donation-form input{
+    width: 49%;
+    height: 40px;   
+}
+
+.donation-form #submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* for example */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.donation-form #card-number {
+    width: 100%;
+}
+
+
+.user-info{
+
+    margin-bottom: 60px;
 
 }
+
+
+.card-info{
+
+    margin-bottom: 20px;
+}
+
+.user-info h2,
+.card-info h2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 25px;
+}
+
+
+.user-info i,
+.card-info i{
+    padding-left: 4px;
+}
+
