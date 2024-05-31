@@ -33,16 +33,28 @@
 
 
             <form class="donation-form">
+
+                <article class="donation-amount">
+                    <h2> <i class='bx bxs-dollar-circle' ></i> Enter the donation amount</h2>
+                    <section>
+                        <div>
+                            <i class='bx bx-dollar'></i>
+                            <input type="number" id="amount" placeholder="Donation amount" min="1" max="100000" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "5">
+                        </div>
+                    </section>
+                </article>
             
                 <article class="user-info">
                     
                     <h2> <i class='bx bxs-id-card'></i> Enter you personal information </h2>
                     <section>
                         <div>
+                            <i class='bx bxs-user'></i>
                             <input type="text" id="first-name" placeholder="First name">
                         </div>
 
                         <div>
+                            <i class='bx bxs-user'></i>
                             <input type="text" id="last-name" placeholder="Last  name">
                         </div>
 
@@ -52,10 +64,12 @@
                     
                     <section>
                         <div>
+                            <i class='bx bxs-envelope' ></i>
                             <input type="email" id="email" placeholder="Email">
                         </div>
 
                         <div>
+                            <i class='bx bxs-phone' ></i>
                             <input type="tel" id="phone-number" placeholder="Telephone">
                         </div>
                     </section>
@@ -67,24 +81,25 @@
                     <h2> <i class='bx bx-credit-card' ></i> Enter your credit card information </h2>
                     <section>
                         <div id="card-number-div">
-                            <i class='bx bxs-lock-alt'></i>
+                            <i class='bx bx-credit-card' ></i>
                             <input type="text" id="card-number" placeholder="Card number" maxlength="16" pattern="[0-9]{16}">
                         </div>
                     </section>
 
                     <section>
                         <div>
+                            <i class='bx bx-calendar' ></i>
                             <input type="text" id="expiration-date" placeholder="MM/YY" maxlength="5" pattern="0[0-9]|1[0-9]\/[0-9]{2}">
                         </div>
                         <div>
+                            <i class='bx bxs-shield'></i>
                             <input type="text" id="security-code" placeholder="Security code" maxlength="4" pattern="[0-9]{3}|[0-9]{4}">
                         </div>
                     </section>
-
                     
                 </article>
                 <section>
-                    <input type="submit" id="submit-btn">
+                    <input type="submit" id="submit-btn" value="Donate">
                 </section>
             </form>
 
@@ -136,5 +151,6 @@
         </div>
     </footer>
 
+ 
 </body>
 </html>
