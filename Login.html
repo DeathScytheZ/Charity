@@ -5,70 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login </title>
     <link rel="stylesheet" href="css/login-style.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
-<body>
 
-
-    <header class="top-header">
-        <img id="logo" src="icons/save-gaza-high-resolution-logo-transparent(4).png">
-    </header>
-    <div class="overlay"></div>
-
-    <section id="login-form">
-        <h1> Login </h1>
-        <form class="login" action="http://localhost/php_test/login.php" method="post">
-            <div class="input-box">
-                <input type="text" placeholder="username" id="usernameInput" name="usernameInput">
-                <i class='bx bxs-user' solid ></i>
-            </div>
-
-            <div class="input-box">
-                <input  type="password" placeholder="password" id="passwordInput" name="passwordInput">
-                <i class='bx bxs-lock-alt' ></i>
-            </div>
-
-            <button type="submit" class="btn" id="login-btn"> Login </button>
-
-            <div class="signup-link">
-                <p> Don't have an account? <a href="#" id="toggleSignup"> Sign up </a> </p>   
-            </div>
-        </form>
-    </section>
-
-
-    <section id="signup-form" class="hidden">
-        <h1> Sign up </h1>
-        <form class="signup" action="http://localhost/php_test/signup.php" method="post">
-            <div class="input-box">
-                <input type="text" placeholder="username" id="username" name="username">
-                <i class='bx bxs-user' solid ></i>  
-            </div>
-
-            <div class="input-box">
-                <input type="password" placeholder="password" id="psword" name="psword">
-                <i class='bx bxs-lock-alt' ></i>
-            </div>
-
-            <div class="input-box">
-                <input type="password" placeholder="confirmPassword" id="pswrd-conf" name="pswrd-conf" >
-                <i class='bx bxs-lock-alt' ></i>
-            </div>
-
-            <div class="input-box">
-                <input type="email" placeholder="example@google.com" id="email" name="email" >
-                <i class='bx bx-envelope' ></i>
-            </div>
-
-            <button type="submit" class="btn"> Sign up </button>
-
-            <div class="signup-link">
-                <p> Already have an account? <a href="#" id="toggleLogin"> Login </a> </p>   
-            </div>
-        </form>
-    </section>
+    <body>
+        <header class="top-header">
+            <img id= "logo" src="icons/save-gaza-high-resolution-logo-transparent(4).png">
+        </header> 
     
-    <script src="js/main.js"></script>
+        <main>
+            <section id="login-form">
+                    <h1> Login </h1>
+                <form class="login" action="http://localhost/php_test/login.php" method="post">
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" id="emailInput" name="emailInput">
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input  type="password" placeholder="password" id="passwordInput" name="passwordInput">
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+
+                    <button type="submit" class="btn" id="login-btn"> Login </button>
+                    
+                    <div class="signup-link">
+                        <p> Don't have an account? <a href="#" id="toggleSignup"> Sign up </a> </p>   
+                    </div>
+
+
+                    <div class="separator">
+                        <hr>
+                        <span>OR</span>
+                        <hr>
+                    </div>
+
+                    <div class="guest">
+                        <a href="http://localhost/charity/Save_Gaza.html"> Continue as a guest </a>
+                    </div>
+                </form>
+            </section>
+
+        
+            <section id="signup-form" class="hidden">
+                <h1> Sign up </h1>
+                <form class="signup" action="http://localhost/php_test/signup.php" method="post">
+                    <div class="input-box">
+                        <input type="text" placeholder="First name" id="first-name" name="first-name">
+                        <i class='bx bxs-user' solid ></i>  
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="text" placeholder="Last name" id="last-name" name="last-name">
+                        <i class='bx bxs-user' solid ></i>  
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" placeholder="password" id="psword" name="psword">
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="password" placeholder="confirm Password" id="pswrd-conf" name="pswrd-conf" >
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" id="email" name="email" >
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn"> Sign up </button>
+                    
+                    <div class="signup-link">
+                        <p> Already have an account? <a href="#" id="toggleLogin"> Login </a> </p>   
+                    </div>
+
+                    <div class="separator">
+                        <hr>
+                        <span>OR</span>
+                        <hr>
+                    </div>
+
+                    <div class="guest">
+                        <a href="http://localhost/charity/Save_Gaza.html"> Continue as a guest </a>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+
+
+        <footer class="footer-section">
+            <div class="site-info">
+                <h2> Learn More </h2>
+                <ul>
+                    <li> <a href="#"> About Us </a> </li>
+                    <li> <a href="#"> Privacy Policy </a> </li>
+                    <li> <a href="#"> Financial Information </a> </li>
+                    <li> <a href="#"> FAQ </a> </li>
+                </ul>
+            </div>
+            
+            <div class="socials">
+                <h2 style="text-align: center;"> Our Socials </h2>
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="icons/gmail.png" style="width: 50px">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="icons/youtube.png" style="width: 50px">
+                </a>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr">
+                    <img src="icons/facebook.png" style="width: 50px">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="icons/instagram.png" style="width: 50px">
+                </a>
+                <a href="https://www.x.com">
+                    <img src="icons/x.png" style="width: 50px">
+                </a>
+                <a href="https://linkedin.x.com">
+                    <img src="icons/linkedin.png" style="width: 50px">
+                </a>
+            </div>
+        
+
+            <div class="contact">
+                <h2> Contact Us </h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Tempora culpa, qui molestiae corporis voluptatem nemo accusamus fugit <br> quaerat eos
+                    asperiores, perferendis <br> libero laborum dicta blanditiis iusto enim consequuntur quibusdam labore.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('toggleSignup').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('login-form').classList.add('hidden');
+                document.getElementById('signup-form').classList.remove('hidden');
+            });
+
+            document.getElementById('toggleLogin').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('signup-form').classList.add('hidden');
+                document.getElementById('login-form').classList.remove('hidden');
+            });
+
+            document.getElementById('login-btn').addEventListener('click', function(e) {
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('isGuest', 'false');
+            });
+
+            document.querySelector('.guest a').addEventListener('click', function(e) {
+                localStorage.setItem('isGuest', 'true');
+                localStorage.setItem('isLoggedIn', 'false');
+            });
+            
+        </script>
 </body>
 </html>
