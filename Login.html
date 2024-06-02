@@ -18,7 +18,7 @@
         <main>
             <section id="login-form">
                     <h1> Login </h1>
-                <form class="login" action="http://localhost/php_test/login.php" method="post">
+                <form class="login" action="http://localhost/php_test/login.php" method="post" onsubmit="return login()">
                     <div class="input-box">
                         <input type="email" placeholder="Email" id="emailInput" name="emailInput">
                         <i class='bx bx-envelope' ></i>
@@ -35,16 +35,17 @@
                         <p> Don't have an account? <a href="#" id="toggleSignup"> Sign up </a> </p>   
                     </div>
 
-
-                    <div class="separator">
-                        <hr>
-                        <span>OR</span>
-                        <hr>
+                    <div class="option-container">
+                        <div class="separator">
+                            <hr>
+                            <span>OR</span>
+                            <hr>
+                        </div>
+                    </div>
+                    <div  id="guest">
+                        <a href="htpp://localhost/charity/Save_Gaza.html"> Continue as a guest </a>
                     </div>
 
-                    <div class="guest">
-                        <a href="http://localhost/charity/Save_Gaza.html"> Continue as a guest </a>
-                    </div>
                 </form>
             </section>
 
@@ -78,21 +79,23 @@
                     </div>
                     
                     
-                    <button type="submit" class="btn"> Sign up </button>
+                    <button type="submit" class="btn" id="login-btn"> Sign up </button>
                     
                     <div class="signup-link">
                         <p> Already have an account? <a href="#" id="toggleLogin"> Login </a> </p>   
                     </div>
 
-                    <div class="separator">
-                        <hr>
-                        <span>OR</span>
-                        <hr>
+                    <div class="option-container">
+                        <div class="separator">
+                            <hr>
+                            <span>OR</span>
+                            <hr>
+                        </div>
                     </div>
-
-                    <div class="guest">
-                        <a href="http://localhost/charity/Save_Gaza.html"> Continue as a guest </a>
+                    <div id="guest">
+                        <a href="htpp://localhost/charity/Save_Gaza.html"> Continue as a guest </a>
                     </div>
+                    
 
                 </form>
             </section>
@@ -146,23 +149,27 @@
                 document.getElementById('login-form').classList.add('hidden');
                 document.getElementById('signup-form').classList.remove('hidden');
             });
-
+        
             document.getElementById('toggleLogin').addEventListener('click', function(e) {
                 e.preventDefault();
                 document.getElementById('signup-form').classList.add('hidden');
                 document.getElementById('login-form').classList.remove('hidden');
             });
 
-            document.getElementById('login-btn').addEventListener('click', function(e) {
-                localStorage.setItem('isLoggedIn', 'true');
-                localStorage.setItem('isGuest', 'false');
-            });
 
-            document.querySelector('.guest a').addEventListener('click', function(e) {
-                localStorage.setItem('isGuest', 'true');
-                localStorage.setItem('isLoggedIn', 'false');
-            });
-            
+            let loginAttempts = 0;
+
+            function login() {
+                loginAttempts++;
+                if (loginAttempts >= 3) {
+                    alert('You have reached the maximum number of login attempts. Please try again later.');
+                    window.close(); // This will only work if the window was opened by the same script
+                    return false;
+                }
+                return true;
+            }
+
         </script>
+        
 </body>
 </html>

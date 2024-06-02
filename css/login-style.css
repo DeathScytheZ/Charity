@@ -22,7 +22,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130vh;
+    height: 150vh;
 }
 
 
@@ -83,6 +83,8 @@ main {
     transform: translateY(-50%);
 }
 
+
+
 #login-form .btn,
 #signup-form .btn{
     width: 100%;
@@ -115,44 +117,51 @@ main {
 .signup-link a{
     font-weight: bold;
     text-decoration: none;
+    transition: text-shadow .3s ease;
 }
 
 .signup-link a:hover{
     text-decoration: underline;
+    text-shadow: 0 0 3px white;
 }
 
 
-.guest{
+.option-container {
     text-align: center;
-    font-weight: bold;
+    padding: 20px;
 }
 
-
-.guest:hover{
-    text-decoration: underline;
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
 }
-
-
-.hidden{
-    display: none;
-}
-
-
 
 .separator {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
 }
 
 .separator hr {
     flex-grow: 1;
     border: none;
     height: 2px;
-    background: #000000;
+    background: #000;
 }
 
 .separator span {
     padding: 0 10px;
+}
+
+
+#guest{
+    font-weight: bold;
+    text-align: center;
+    transition: transform .4s ease, text-shadow .3s ease;
+}
+
+#guest:hover{
+    transform: scale(1.05);
+    text-decoration: underline;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
 }
